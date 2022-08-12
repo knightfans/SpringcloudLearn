@@ -5,6 +5,10 @@ spring:
   application:
     name: cloud-consumer-feign-hysterix-order-com.lis1.springcloud.service
 
+# 开启feign hystrix
+feign:
+  hystrix:
+    enabled: true
 
 eureka:
   instance:
