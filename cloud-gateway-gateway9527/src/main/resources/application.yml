@@ -22,7 +22,10 @@ spring:
 #           - Before=2022-08-23T17:30:03.439+08:00[Asia/Shanghai]   # Before表示在指定时间之前该配置生效
 #           - After=2022-08-23T17:20:03.439+08:00[Asia/Shanghai]    # After表示在指定时间之后该配置才生效
 #           - BetWeen=2022-08-23T17:20:03.439+08:00[Asia/Shanghai],2022-08-23T17:30:03.439+08:00[Asia/Shanghai]   # Between表示在两个指定时间之间该配置才生效
-            - Cookie=username,lis1
+#           - Cookie=username,lis1       # Cookie表示请求必须携带cookie（K，V）键值对该配置才会生效
+#           - Header=X-Request-Id, \d+   # Header表示该请求请求头必须要有对应Key的属性，Value为正则表达式
+#           - Method=GET                 # Method表示该请求的请求方式必须为指定方式该配置才会生效
+#           - Query=Id, \d+              # Query表示该请求必须带有key值参数并且值符合value指定的正则表达式时该配置生效
 
               # 路由的ID，没有固定规则但要求唯一，建议配合服务名
         - id: payment_routh2
