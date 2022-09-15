@@ -12,7 +12,7 @@ spring:
           uri: https://github.com/knightfans/springcloud-config.git  # GitHub上面的git仓库名字
           search-paths: # 搜索目录
             - springcloud-config
-      label: master # 读取分支
+      label: main # 读取分支
 
 #服务注册到eureka地址
 eureka:
